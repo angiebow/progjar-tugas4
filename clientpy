@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    print("Choose an action:")
+    print("1. List files")
+    print("2. Upload a file")
+    print("3. Delete a file")
+
+    choice = input("Enter your choice (1/2/3): ")
+
+    if choice == '1':
+        list_files()
+    elif choice == '2':
+        filename = input("Enter filename to upload: ")
+        upload_file(filename)
+    elif choice == '3':
+        filename = input("Enter filename to delete: ")
+        delete_file(filename)
+    else:
+        print("Invalid choice")
